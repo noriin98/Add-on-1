@@ -6,7 +6,8 @@ body {
     max-width: 600px;
     margin: 100px auto;
     padding: 50px;
-    background-color: white;
+    background-image: url("oslo.jpg");
+    background-repeat: no-repeat;
 }
 
 .row {
@@ -15,6 +16,7 @@ body {
 
 h2 {
 text-align: center;
+margin: 0;
 }
 
 .tid, p{
@@ -25,9 +27,6 @@ text-align: center;
     padding: 15px;
 }
 
-.by {
-    margin: 0;
-}
 
 p {
     position: relative;
