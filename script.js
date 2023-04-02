@@ -1,9 +1,9 @@
 function updateTime() {	
-let osloElement = document.querySelector("#oslo");	
+let osloElement = document.querySelector(".by");	
 if (osloElement) {	
 let osloDateElement = document.querySelector(".dato");	
 let osloTimeElement = document.querySelector(".tid");	
-let osloTime = moment().tz("Europe/Oslo");	
+let osloTime = moment().tz("America/New_York");	
 osloDateElement.innerHTML = osloTime.format("MMMM Do YYYY");	
 osloTimeElement.innerHTML = osloTime.format("HH mm ss");	
 }	
