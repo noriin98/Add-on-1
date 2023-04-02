@@ -31,7 +31,49 @@ citiesElement.innerHTML = `
         </div>`;	
  }	
 
+var select = document.querySelector("select");
+var html = document.querySelector(".container");
+html.style.backgroundSize = "cover";
+html.style.backgroundRepeat = "no-repeat";
 
+select.addEventListener("change", background);
+
+function background() {
+    var choice= select.value;
+
+    if(choice === "location") {
+        html.style.backgroundImage = "url(world.webp)";
+        html.style.color = "White";
+
+    }
+
+    if(choice === "Asia/Karachi") {
+        html.style.backgroundImage = "url(pakistan1.jpg)";
+        html.style.color = "White";
+
+    }
+    if(choice === "Europe/Oslo") {
+        html.style.backgroundImage = "url(oslo.jpg)";
+        html.style.color = "White";
+    }
+    if(choice === "Africa/Johannesburg") {
+        html.style.backgroundImage = "url(south-africa1.jpg)";
+        html.style.color = "White";
+    }
+    if(choice === "America/Sao_Paulo") {
+        html.style.backgroundImage = "url(brazil2.jpg)";
+        html.style.color = "White";
+    }
+    if(choice === "America/New_York") {
+        html.style.backgroundImage = "url(new-york.jpg)";
+        html.style.color = "Black";
+    }
+    if(choice === "Australia/Sydney") {
+        html.style.backgroundImage = "url(sydney.jpg)";
+    }
+}
+
+updateTime();
 let citiesSelectElement = document.querySelector("#cities");	
 citiesSelectElement.addEventListener("change", updateCity);	
 setInterval("updateCity", 1000);

@@ -2,12 +2,25 @@ body {
     text-align: center !important;
 }
 .container {
-    max-width: 600px;
+    width: 500px;
+    height: 400px;
     margin: 100px auto;
     padding: 50px;
-    background-image: url("oslo.jpg");
+    box-shadow: 0px 0px 10px 2px grey;
+    
+
+    background-image: url("oslo1.avif");
+    background-size: 500px;
     background-repeat: no-repeat;
+    background-position: center;
+
 }
+
+select {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
 
 .row {
     padding: 15px 0 0 0;
