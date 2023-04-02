@@ -1,6 +1,6 @@
 function updateTime() {	
 let osloElement = document.querySelector("#oslo");	
-if ("osloElement") {	
+if (osloElement) {	
 let osloDateElement = document.querySelector(".dato");	
 let osloTimeElement = document.querySelector(".tid");	
 let osloTime = moment().tz("Europe/Oslo");	
@@ -20,7 +20,7 @@ citiesElement.innerHTML = `
 <div class="city">	
         <div class="row">	
             <div class="col-6">	
-                <h2>${cityName}</h2>	
+                <h2>${cityName}</h2>
                 <br>	
                 <p class="dato">${cityTime.format("MMMM Do YYYY")}</p>	
             </div>	
@@ -34,4 +34,4 @@ citiesElement.innerHTML = `
 
 let citiesSelectElement = document.querySelector("#cities");	
 citiesSelectElement.addEventListener("change", updateCity);	
-setInterval(updateCity, 1000);
+setInterval("updateCity", 1000);
