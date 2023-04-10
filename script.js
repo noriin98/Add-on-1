@@ -76,5 +76,5 @@ function background() {
 updateTime();
 let citiesSelectElement = document.querySelector("#cities");	
 citiesSelectElement.addEventListener("change", updateCity);	
-setInterval("updateCity", 1000);
-setInterval("updateTime", 1000);
+setInterval(updateCity, 1000);
+setInterval(updateTime, 1000);
