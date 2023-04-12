@@ -28,7 +28,10 @@ citiesElement.innerHTML = `
                 <h2 class="tid">${cityTime.format("HH mm ss")}</h2>	
             </div>	
         </div>	
-        </div>`;	
+        </div>`;
+        setTimeout(() => {
+            updateCity(event)
+        }, 1000);	
  }	
 
 var select = document.querySelector("select");
@@ -76,5 +79,5 @@ function background() {
 updateTime();
 let citiesSelectElement = document.querySelector("#cities");	
 citiesSelectElement.addEventListener("change", updateCity);	
-setInterval(updateCity, 1000);
+
 setInterval(updateTime, 1000);
